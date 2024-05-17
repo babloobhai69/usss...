@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(https://www.airpano.com/files/norway_polar_lights_01_big.jpg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                height: 100vh;
+                position: relative; /* Required for absolute positioning */
+            }
+            .top-image {
+        width: 380px; /* Set width to 100% */
+        max-width: 1200px; /* Define a maximum width */
+        height: 120px; /* Maintain aspect ratio */
+        position: absolute;
+        top: 15%; /* Place it 50% from the top */
+        left: 30%; /* Place it 50% from the left */
+        transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+        z-index: -1;
+            }
+       
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color:   #9afad4;
+            box-sizing: border-box;
+            border: 1px solid #96ebba;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color:   #ff749d; /* Changed to green */
+            color:rgb(110, 224, 252) ;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #6a8ee2;
+        }
+        /* Added styles for the artistic heading */
+        .artistic-heading {
+            text-align: center;
+            align-self: center;
+            font-size: 120px;
+            font-family: 'month flower', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+            margin-right: 0px;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'month flower';
+            src: url('C:\Users\intel\Downloads\month_flower') format('woff2');
+            /* Add additional font file formats if necessary */
+        }
+    </style>
+</head>
+<body>
+    <img class="top-image" src="sea_green-removebg-preview (1).png" alt="Top Image"> <!-- Replace 'your-image.png' with the path to your PNG image -->
+   <br>
+    <div class="login-container">
+        
+        <h2 style="margin-bottom: 0;"><pre style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(255, 192, 46); margin: 0;">Let's go to the Moon,</pre></h2>
+        <h2 style="margin-top: 0;"><pre style="font-family: Verdana, Geneva, Tahoma, sans-serif; color:rgb(255, 192, 46); margin: 0;">Fuck Dharti!</pre></h2>
+        
+        <form id="loginForm" method="post"></form>
+            <input type="text" name="username" placeholder="who are you?" required>
+            <input type="password" name="password" placeholder="cheatcode" required>
+            <input type="submit" value="Login" onclick="redirectToAnotherPage()">
+        </form>
+    </div>
+    <script>
+        function redirectToAnotherPage() {
+            // Redirecting to another HTML page
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url('new edit flower.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            position: relative; /* Required for absolute positioning */
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 40px; /* Adjust top margin */
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-auto-rows: auto; /* Automatic row height */
+            grid-gap: 50px; /* Adjust the gap between buttons */
+        }
+        .button {
+            display: block;
+            width: 250px; /* Full width of the grid cell */
+            height: 100px;
+            padding: 15px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            text-align: center;
+            line-height: 100px; /* Center text vertically */
+        }
+        .button:nth-child(1) {
+            background-color: #abd580; /* Change color of button 1 */
+        }
+        .button:nth-child(2) {
+            background-color: #abd580; /* Change color of button 2 */
+        }
+        .button:nth-child(3) {
+            background-color: #9cd670; /* Change color of button 3 */
+        }
+        .button:nth-child(4) {
+            background-color: #9cd670; /* Change color of button 4 */
+        }
+        .button:nth-child(5) {
+            background-color: #6ed063; /* Change color of button 5 */
+        }
+        .button:nth-child(6) {
+            background-color: #6ed063; /* Change color of button 6 */
+        }
+        .button:nth-child(7) {
+            background-color: #679f3d; /* Change color of button 7 */
+        }
+        .button:nth-child(8) {
+            background-color: #679f3d; /* Change color of button 8 */
+        }
+        .button:hover {
+            background-color: #f0f77d;
+        }
+        
+        .image-container {
+            width: 550px;
+            height: 350px; /* Same height as the heading */
+            background-image: url('heading_hori_crop-removebg-preview.png'); /* Replace 'your-image.png' with your image file */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top:10%;
+            margin-left: 0; 
+            margin-right: 0;
+            position: relative;
+            z-index: 0;
+            ;
+        }
+    </style>
+     
+</head>
+<body>
+    <div class="image-container"></div>
+    <div class="container">
+        <a href="stary night.html" class="button">Lag Ja Gale </a>
+        <a href="zodiac.html" class="button">Zodiac</a>
+        <a href="#" class="button">Button 3</a>
+        <a href="#" class="button">Button 4</a>
+        <a href="#" class="button">Button 5</a>
+        <a href="#" class="button">Button 6</a>
+        <a href="#" class="button">Button 7</a>
+        <a href="#" class="button">Button 8</a>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
